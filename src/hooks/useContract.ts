@@ -1,16 +1,10 @@
-import { useContract, useContractRead, useContractWrite, useAccount } from 'wagmi';
+import { useContractRead, useContractWrite, useAccount } from 'wagmi';
 import { VaultBondTrader } from '../lib/contracts';
 
 export const useVaultBondTrader = () => {
   const { address } = useAccount();
   
-  const contract = useContract({
-    address: '0x...', // Contract address will be set after deployment
-    abi: VaultBondTrader.abi,
-  });
-
   return {
-    contract,
     address,
   };
 };

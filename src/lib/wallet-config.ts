@@ -3,7 +3,7 @@ import { sepolia } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
   appName: 'Vault Bond Trader',
-  projectId: '2ec9743d0d0cd7fb94dee1a7e6d33475',
+  projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID || 'your-project-id',
   chains: [sepolia],
   ssr: false,
 });

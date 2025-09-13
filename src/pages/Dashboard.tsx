@@ -58,8 +58,19 @@ const Dashboard = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-trading-accent/10">
-                <Shield className="h-6 w-6 text-trading-accent" />
+              <div className="p-2 rounded-lg bg-gradient-to-br from-blue-600 to-blue-500">
+                <svg className="h-6 w-6 text-white" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 4L8 8V16C8 20.4183 11.5817 24 16 24C20.4183 24 24 20.4183 24 16V8L16 4Z" 
+                        fill="white" 
+                        stroke="#1e40af" 
+                        strokeWidth="1.5"/>
+                  <path d="M12 10H16C17.1046 10 18 10.8954 18 12V14C18 15.1046 17.1046 16 16 16H12V20H10V10H12ZM12 12V14H16V12H12Z" 
+                        fill="#1e40af"/>
+                  <circle cx="20" cy="20" r="3" fill="#1e40af"/>
+                  <path d="M19 19V18C19 17.4477 19.4477 17 20 17C20.5523 17 21 17.4477 21 18V19H19Z" 
+                        fill="white"/>
+                  <rect x="18.5" y="19" width="3" height="2" rx="0.5" fill="white"/>
+                </svg>
               </div>
               <div>
                 <h1 className="text-xl font-bold text-trading-text-primary">
